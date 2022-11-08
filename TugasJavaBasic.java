@@ -21,7 +21,7 @@ public class TugasJavaBasic {
         int s;
         int t;
         int π = 22 / 7;
-        int r;
+        float r;
         // Menu Kedua
         float satuan;
         float hasil;
@@ -102,9 +102,10 @@ public class TugasJavaBasic {
                                             // End Segitiga
                                             case 4:
                                                 System.out.println("Lingkaran");
-                                                System.out.print("Masukan Jari Jarinya");
+                                                System.out.print("Masukan Jari Jarinya: ");
                                                 r = tugas.nextInt();
-                                                System.out.print("Hasilnya: " + (π * r * r));
+                                                hasil = 22 * r * r / 7;
+                                                System.out.print("Hasilnya: " + hasil);
                                                 System.out.print(" m2 \n");
                                                 break;
 
@@ -133,7 +134,7 @@ public class TugasJavaBasic {
                                                 System.out.print("Masukan Tinggi: ");
                                                 t = tugas.nextInt();
                                                 System.out.print("Hasilnya: " + (p * l * t));
-                                                System.out.print(" m3 \n");
+                                                System.out.print(" l3 \n");
                                                 break;
                                             // End Balok
                                             // Kubus
@@ -142,7 +143,7 @@ public class TugasJavaBasic {
                                                 System.out.print("Masukan Sisi: ");
                                                 s = tugas.nextInt();
                                                 System.out.print("Hasilnya: " + (s * s * s));
-                                                System.out.print(" m3 \n");
+                                                System.out.print(" l3 \n");
                                                 break;
                                             // End Kubus
                                             // Bola
@@ -150,8 +151,9 @@ public class TugasJavaBasic {
                                                 System.out.println("Bola");
                                                 System.out.print("Masukan Jari jari: ");
                                                 r = tugas.nextInt();
-                                                System.out.print("Hasilnya: " + (4 / 3 * π * r * r * r));
-                                                System.out.print(" m3 \n");
+                                                hasil = 4 / 3 * π * r * r * r;
+                                                System.out.print("Hasilnya: " + hasil);
+                                                System.out.print(" l3 \n");
                                                 break;
                                             // End Bola
                                             default:
