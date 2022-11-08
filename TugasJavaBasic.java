@@ -9,13 +9,12 @@ public class TugasJavaBasic {
         // Variabel
         // Login
         String login;
-        String password;
+        int password;
         int pin;
         // Swicth Case
         int menuAwal = 0;
         int menu = 0;
         int menu1 = 0;
-        int menucoba = 0;
         // menu Pertama
         int p;
         int l;
@@ -39,20 +38,15 @@ public class TugasJavaBasic {
         System.out.println("Masukan Nama Anda: ");
         login = tugas.next();
         System.out.println("Masukan Password Anda :");
-        password = tugas.next();
+        password = tugas.nextInt();
         System.out.println("Masukan Pin Anda:");
         pin = tugas.nextInt();
         // End Login
         // Validasi Login
-        if (login.equals("Administrator") && password.length() >= 5 && pin == 123456789) {
+        if (login.equals("Administrator") && password >= 00000 && pin == 123456789) {
             // Pembungkus Menu Awal
-            switch (menucoba) {
-                case 1:
-
-                    break;
-            }
+            System.out.println("Akses Diterima, Selamat Datang "); 
             do {
-                System.out.println("Akses Diterima, Selamat Datang ");
                 // Menu Awal
                 System.out.print("Silahkan Pilih Menu: \n" + "1.Bangun Ruang/Datar \n" + "2.Konversi \n"
                         + "3.Secret Menu \n" + "4.Exit \n");
@@ -71,7 +65,7 @@ public class TugasJavaBasic {
                                 case 1:
                                     do {
                                         System.out.println("Pilih : \n" + "1.Persegi Panjang \n" + "2.Persegi \n"
-                                                + "3.Segitiga \n" + "4.Close \n");
+                                                + "3.Segitiga \n" + "4.Lingkaran \n" + "5.Close");
                                         System.out.print("Silahkan Pilih: ");
                                         menu1 = tugas.nextInt();
                                         switch (menu1) {
@@ -106,12 +100,19 @@ public class TugasJavaBasic {
                                                 System.out.print(" m2 \n");
                                                 break;
                                             // End Segitiga
+                                            case 4:
+                                                System.out.println("Lingkaran");
+                                                System.out.print("Masukan Jari Jarinya");
+                                                r = tugas.nextInt();
+                                                System.out.print("Hasilnya: " + (π * r * r));
+                                                System.out.print(" m2 \n");
+                                                break;
 
                                             default:
                                                 System.out.println("Exit");
                                                 break;
                                         }
-                                    } while (menu1 < 4);
+                                    } while (menu1 < 5);
                                     break;
                                 // End Menu Tentang Bangun Datar
                                 // Menu Tentang Bangun Ruang
@@ -188,7 +189,7 @@ public class TugasJavaBasic {
                                             case 1:
                                                 System.out.println("Conversi Celcius ke Reamur");
                                                 System.out.print("Silahkan Masukan Nilainya: ");
-                                                c = tugas.nextInt(); 
+                                                c = tugas.nextInt();
                                                 derajat = 4 * c / 5;
                                                 System.out.println("Hasilnya: " + derajat + " R°");
                                                 break;
@@ -386,7 +387,7 @@ public class TugasJavaBasic {
                                             System.out.println(String.join(" ", list));
                                             break;
                                         default:
-                                            tugas.close();
+                                            menu = 5;
                                             break;
                                     }
                                 } while (menu1 < 4);
