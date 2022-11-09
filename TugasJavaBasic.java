@@ -15,12 +15,12 @@ public class TugasJavaBasic {
         int menuAwal = 0;
         int menu = 0;
         int menu1 = 0;
+        int menu2 = 0;
         // menu Pertama
         int p;
         int l;
         int s;
         int t;
-        int π = 22 / 7;
         float r;
         // Menu Kedua
         float satuan;
@@ -45,7 +45,7 @@ public class TugasJavaBasic {
         // Validasi Login
         if (login.equals("Administrator") && password >= 00000 && pin == 123456789) {
             // Pembungkus Menu Awal
-            System.out.println("Akses Diterima, Selamat Datang "); 
+            System.out.println("Akses Diterima, Selamat Datang ");
             do {
                 // Menu Awal
                 System.out.print("Silahkan Pilih Menu: \n" + "1.Bangun Ruang/Datar \n" + "2.Konversi \n"
@@ -151,7 +151,7 @@ public class TugasJavaBasic {
                                                 System.out.println("Bola");
                                                 System.out.print("Masukan Jari jari: ");
                                                 r = tugas.nextInt();
-                                                hasil = 4 * 22 * r * r * r/ 3 / 7;
+                                                hasil = 4 * 22 * r * r * r / 3 / 7;
                                                 System.out.print("Hasilnya: " + hasil);
                                                 System.out.print(" liter \n");
                                                 break;
@@ -189,18 +189,60 @@ public class TugasJavaBasic {
                                         menu1 = tugas.nextInt();
                                         switch (menu1) {
                                             case 1:
-                                                System.out.println("Conversi Celcius ke Reamur");
-                                                System.out.print("Silahkan Masukan Nilainya: ");
-                                                c = tugas.nextInt();
-                                                derajat = 4 * c / 5;
-                                                System.out.println("Hasilnya: " + derajat + " R°");
+                                                do {
+                                                    System.out.println("Pilihan Menu : \n" + "1.Celcius Ke Reamur \n"
+                                                            + "2.Reamur Ke Celcius \n" + "3.Close");
+                                                    System.out.print("Silahkan Pilih : ");
+                                                    menu2 = tugas.nextInt();
+                                                    switch (menu2) {
+                                                        case 1:
+                                                            System.out.println("Conversi Celcius ke Reamur");
+                                                            System.out.print("Silahkan Masukan Nilainya: ");
+                                                            c = tugas.nextInt();
+                                                            derajat = 4 * c / 5;
+                                                            System.out.println("Hasilnya: " + derajat + " R°");
+                                                            break;
+                                                        case 2:
+                                                            System.out.println("Conversi Reamur ke Celcius");
+                                                            System.out.print("Silahkan Masukan Nilainya: ");
+                                                            c = tugas.nextInt();
+                                                            derajat = 5 * c / 4;
+                                                            System.out.println("Hasilnya: " + derajat + " C°");
+                                                            break;
+
+                                                        default:
+                                                            System.out.println("Exit");
+                                                            break;
+                                                    }
+
+                                                } while (menu2 < 3);
                                                 break;
                                             case 2:
-                                                System.out.println("Conversi Celcius ke Fahrenheit");
-                                                System.out.print("Silahkan Masukan Nilainya: ");
-                                                c = tugas.nextInt();
-                                                derajat = 9 * c / 5 + 32;
-                                                System.out.println("Hasilnya: " + derajat + " F°");
+                                                do {
+                                                    System.out.println("Pilihan Menu : \n" + "1.Celcius Ke Fahrenheit \n"
+                                                            + "2.Fahrenheit Ke Celcius \n" + "3.Close");
+                                                    System.out.print("Silahkan Pilih : ");
+                                                    menu2 = tugas.nextInt();
+                                                    switch (menu2) {
+                                                        case 1:
+                                                        System.out.println("Conversi Celcius ke Fahrenheit");
+                                                        System.out.print("Silahkan Masukan Nilainya: ");
+                                                        c = tugas.nextInt();
+                                                        derajat = 9 * c / 5 + 32;
+                                                        System.out.println("Hasilnya: " + derajat + " F°");
+                                                            break;
+                                                        case 2:
+                                                        System.out.println("Conversi Fahrenheit ke Celcius ");
+                                                        System.out.print("Silahkan Masukan Nilainya: ");
+                                                        c = tugas.nextInt();
+                                                        derajat = (5 * (c - 32) / 9);
+                                                        System.out.println("Hasilnya: " + derajat + " C°");
+                                                            break;
+
+                                                        default:
+                                                            break;
+                                                    }
+                                                } while (menu2 < 3);
                                                 break;
 
                                             default:
