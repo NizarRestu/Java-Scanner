@@ -134,7 +134,7 @@ public class TugasJavaBasic {
                                                 System.out.print("Masukan Tinggi: ");
                                                 t = tugas.nextInt();
                                                 System.out.print("Hasilnya: " + (p * l * t));
-                                                System.out.print(" l3 \n");
+                                                System.out.print(" liter \n");
                                                 break;
                                             // End Balok
                                             // Kubus
@@ -143,7 +143,7 @@ public class TugasJavaBasic {
                                                 System.out.print("Masukan Sisi: ");
                                                 s = tugas.nextInt();
                                                 System.out.print("Hasilnya: " + (s * s * s));
-                                                System.out.print(" l3 \n");
+                                                System.out.print(" liter \n");
                                                 break;
                                             // End Kubus
                                             // Bola
@@ -153,7 +153,7 @@ public class TugasJavaBasic {
                                                 r = tugas.nextInt();
                                                 hasil = 4 / 3 * π * r * r * r;
                                                 System.out.print("Hasilnya: " + hasil);
-                                                System.out.print(" l3 \n");
+                                                System.out.print(" liter \n");
                                                 break;
                                             // End Bola
                                             default:
