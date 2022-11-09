@@ -151,7 +151,7 @@ public class TugasJavaBasic {
                                                 System.out.println("Bola");
                                                 System.out.print("Masukan Jari jari: ");
                                                 r = tugas.nextInt();
-                                                hasil = 4 / 3 * 22 * r * r * r / 7;
+                                                hasil = 4 * 22 * r * r * r/ 3 / 7;
                                                 System.out.print("Hasilnya: " + hasil);
                                                 System.out.print(" liter \n");
                                                 break;
