@@ -25,8 +25,8 @@ public class TugasJavaBasic {
         // Menu Kedua
         float satuan;
         float hasil;
-        int c;
-        int derajat;
+        float c;
+        float derajat ;
         // Menu Ketiga
         String unik;
         String text;
@@ -199,22 +199,22 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Conversi Celcius ke Reamur");
                                                             System.out.print("Silahkan Masukan Nilainya: ");
-                                                            c = tugas.nextInt();
+                                                            c = tugas.nextFloat();
                                                             derajat = 4 * c / 5;
                                                             System.out.println("Hasilnya: " + derajat + " R°");
                                                             break;
                                                         case 2:
                                                             System.out.println("Conversi Reamur ke Celcius");
                                                             System.out.print("Silahkan Masukan Nilainya: ");
-                                                            c = tugas.nextInt();
+                                                            c = tugas.nextFloat();
                                                             derajat = 5 * c / 4;
                                                             System.out.println("Hasilnya: " + derajat + " C°");
                                                             break;
                                                         case 3:
                                                             System.out.println("Conversi Reamur ke Fahrenheit");
                                                             System.out.print("Silahkan Masukan Nilainya: ");
-                                                            c = tugas.nextInt();
-                                                            derajat = 9 * c / 4 + 32;
+                                                            c = tugas.nextFloat();
+                                                            derajat = ((9 * c) / 4) + 32;
                                                             System.out.println("Hasilnya: " + derajat + " F°");
                                                             break;
 
@@ -237,23 +237,23 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Conversi Celcius ke Fahrenheit");
                                                             System.out.print("Silahkan Masukan Nilainya: ");
-                                                            c = tugas.nextInt();
+                                                            c = tugas.nextFloat();
                                                             derajat = 9 * c / 5 + 32;
                                                             System.out.println("Hasilnya: " + derajat + " F°");
                                                             break;
                                                         case 2:
                                                             System.out.println("Conversi Fahrenheit ke Celcius ");
                                                             System.out.print("Silahkan Masukan Nilainya: ");
-                                                            c = tugas.nextInt();
+                                                            c = tugas.nextFloat();
                                                             derajat = (5 * (c - 32) / 9);
                                                             System.out.println("Hasilnya: " + derajat + " C°");
                                                             break;
                                                         case 3:
                                                             System.out.println("Conversi Fahrenheit ke Reamur ");
                                                             System.out.print("Silahkan Masukan Nilainya: ");
-                                                            c = tugas.nextInt();
+                                                            c = tugas.nextFloat();
                                                             derajat = (4 * (c - 32) / 9);
-                                                            System.out.println("Hasilnya: " + derajat + " R°");
+                                                            System.out.println("Hasilnya: " + derajat + " F°");
                                                             break;
 
                                                         default:
